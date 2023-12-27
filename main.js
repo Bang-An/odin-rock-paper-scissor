@@ -13,6 +13,7 @@ function playRound(playerSelection, computerSelection) {
     }
 
     if(playerSelection === computerSelection){
+        console.log("We have a tie here")
         return playRound(prompt("please enter your choice for this game(rock, paper or scissors)", ""), getComputerChoice())
     }else if((playerSelection === "rock" && computerSelection ==="scissors") ||  
             (playerSelection === "scissors" && computerSelection ==="paper") ||
@@ -25,7 +26,7 @@ function playRound(playerSelection, computerSelection) {
 
 function game(){
     let countPlayer = 0, countComputer = 0;
-    while(countPlayer != 0 && countComputer != 0){
+    while(countPlayer != 5 && countComputer != 5){
         let res = playRound(prompt("please enter your choice for this game(rock, paper or scissors)", ""), getComputerChoice());
         if(res === "player"){
             console.log(`The winner of this round is ${res}`);
