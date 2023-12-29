@@ -1,0 +1,22 @@
+
+.selection-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+}
+
+.score-board{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.choice-section {
+    display: flex;
+    justify-content: space-around;
+}
